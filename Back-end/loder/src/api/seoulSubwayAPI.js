@@ -5,7 +5,7 @@ export async function seoulSubwayAPI(subwayNm) {
     const TYPE = 'json';
     const SERVICE = 'realtimePosition';
     const START_INDEX = 0;
-    const END_INDEX = 100;
+    const END_INDEX = 200;
 
     try {
         const url = `http://swopenAPI.seoul.go.kr/api/subway/${KEY}/${TYPE}/${SERVICE}/${START_INDEX}/${END_INDEX}/${subwayNm}`;

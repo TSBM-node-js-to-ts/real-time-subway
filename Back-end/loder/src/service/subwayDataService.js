@@ -1,5 +1,6 @@
 import { seoulSubwayAPI } from '../api/seoulSubwayAPI.js';
 import { saveToFile } from '../fs/saveToFile.js';
+import { saveToDb } from '../repository/saveToDb.js';
 
 export async function subwayDataService() {
     const lines = process.env.SUBWAY_LINES.split(',');
@@ -29,6 +30,7 @@ export async function subwayDataService() {
         allProcess.push(...process);
     }
 
-    await saveToFile(allProcess);
+    //await saveToFile(allProcess);
+    await saveToDb(allProcess);
     return allProcess;
 }

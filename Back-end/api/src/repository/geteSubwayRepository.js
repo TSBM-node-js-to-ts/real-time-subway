@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const filePath = path.resolve('../loader/subwayData.json');
+const filePath = path.resolve('../loder/subwayData.json');
 
 export async function geteSubwayRepository(line) {
     try {
